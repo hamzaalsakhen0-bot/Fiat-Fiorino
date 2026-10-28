@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fiat Fiorino</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Fiat Fiorino">
+<meta name="theme-color" content="#06281f">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#06281f; --bg-2:#0d4a38; --panel:#0e4233; --panel-2:#135240;
+    --line:#25715a; --text:#ffffff; --muted:#b4dccd;
+    --amber:#c6f36b; --amber-dim:#7fd9a6; --teal:#5ee6d0; --red:#ff8f87; --violet:#b9a8ff; --blue:#7cc4ff;
+    color-scheme: dark;
+  }
+  @media (prefers-color-scheme: light) and (min-width:99999px){
+    :root:not([data-theme="dark"]){
+      --bg:#eef0f4; --bg-2:#e3e6ec; --panel:#ffffff; --panel-2:#f3f4f8;
+      --line:#dde0e8; --text:#191b22; --muted:#686e81;
+      --amber:#b4710f; --amber-dim:#d8b27c; --teal:#108a74; --red:#c23f3c; --violet:#6a58d6; --blue:#2878b8;
+    }
+  }
+  :root[data-theme="none"]{
+    --bg:#eef0f4; --bg-2:#e3e6ec; --panel:#ffffff; --panel-2:#f3f4f8;
+    --line:#dde0e8; --text:#191b22; --muted:#686e81;
+    --amber:#b4710f; --amber-dim:#d8b27c; --teal:#108a74; --red:#c23f3c; --violet:#6a58d6; --blue:#2878b8;
+  }
+  *{box-sizing:border-box;}
+  html,body{height:100%;}
+  body{
+    margin:0;
+    background: radial-gradient(1100px 500px at 50% -10%, var(--bg-2), var(--bg) 60%);
+    color:var(--text);
+    font-family:'IBM Plex Sans Arabic', 'Segoe UI', Tahoma, sans-serif;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  .mono{ font-family:'JetBrains Mono', ui-monospace, monospace; direction:ltr; unicode-bidi:plaintext; }
+  .wrap{ max-width:520px; margin:0 auto; padding:0 16px 48px; }
+
+  header{ padding:26px 0 16px; text-align:center; }
+  .brand{ display:flex; align-items:center; justify-content:center; gap:8px; color:var(--muted); font-size:.78rem; margin-bottom:16px; }
+  .brand .dot{ width:6px; height:6px; border-radius:50%; background:var(--amber); }
+
+  .hero{
+    background:linear-gradient(180deg, var(--panel), var(--panel-2));
+    border:1px solid var(--line); border-radius:20px; padding:26px 20px 20px;
+    position:relative; overflow:hidden;
+  }
+  .hero::before{
+    content:""; position:absolute; inset:0 0 auto 0; height:3px;
+    background:linear-gradient(90deg, transparent, var(--amber), transparent); opacity:.8;
+  }
+  .hero .label{ color:var(--muted); font-size:.82rem; margin-bottom:6px; }
+  .hero .figure{ font-size:2.7rem; font-weight:700; color:var(--amber); line-height:1; }
+  .hero .figure sup{ font-size:1rem; color:var(--muted); font-weight:500; margin-inline-start:6px; }
+  .hero .sub-row{ display:flex; justify-content:center; gap:18px; margin-top:16px; padding-top:14px; border-top:1px solid var(--line); flex-wrap:wrap; }
+  .hero .sub-row div{ text-align:center; }
+  .hero .sub-row .v{ font-size:1rem; font-weight:600; color:var(--text); }
+  .hero .sub-row .l{ font-size:.7rem; color:var(--muted); margin-top:2px; }
+
+  .card{ background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:18px 16px; margin-top:14px; }
+  .card h2{ font-size:.82rem; font-weight:600; color:var(--muted); margin:0 0 14px; }
+  .card h2 .n{ color:var(--amber); margin-inline-end:6px; }
+
+  details.card{ padding:14px 16px; }
+  details.card summary{
+    font-size:.84rem; font-weight:600; color:var(--muted); cursor:pointer; list-style:none;
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  details.card summary::-webkit-details-marker{ display:none; }
+  details.card summary::after{ content:"›"; transform:rotate(90deg); font-size:1.1rem; transition:transform .2s; }
+  details.card[open] summary::after{ transform:rotate(-90deg); }
+  details.card h3{ font-size:.75rem; color:var(--amber-dim); margin:16px 0 4px; text-transform:uppercase; letter-spacing:.03em; }
+  details.card h3:first-of-type{ margin-top:14px; }
+
+  .toggle{ display:flex; background:var(--panel-2); border:1px solid var(--line); border-radius:10px; padding:3px; gap:3px; }
+  .toggle button{
+    flex:1; border:none; background:transparent; color:var(--muted); padding:8px 6px; border-radius:8px;
+    font-size:.84rem; font-family:inherit; cursor:pointer; transition:.15s;
+  }
+  .toggle button.active{ background:var(--amber); color:#1a1306; font-weight:600; }
+
+  .field{ display:flex; align-items:center; justify-content:space-between; gap:12px; padding:11px 0; border-bottom:1px solid var(--line); }
+  .field:last-child{ border-bottom:none; padding-bottom:0; }
+  .field:first-child{ padding-top:0; }
+  .field .meta{ flex:1; min-width:0; }
+  .field label{ font-size:.9rem; display:block; }
+  .field .hint{ display:block; font-size:.72rem; color:var(--muted); margin-top:2px; }
+  .field .input-group{
+    display:flex; align-items:center; gap:6px; background:var(--panel-2); border:1px solid var(--line);
+    border-radius:10px; padding:4px 10px; flex-shrink:0;
+  }
+  .field input{ width:84px; text-align:left; background:transparent; border:none; color:var(--text); padding:5px 0; font-size:.95rem; direction:ltr; }
+  .field input:focus{ outline:none; }
+  .field .unit{ font-size:.72rem; color:var(--muted); }
+
+  .bars{ display:flex; flex-direction:column; gap:12px; }
+  .bar-row .top{ display:flex; justify-content:space-between; font-size:.85rem; margin-bottom:6px; }
+  .bar-row .top .val{ color:var(--muted); }
+  .bar-track{ height:7px; border-radius:4px; background:var(--panel-2); overflow:hidden; }
+  .bar-fill{ height:100%; border-radius:4px; transition:width .25s ease; }
+
+  table{ width:100%; border-collapse:collapse; font-size:.84rem; margin-top:16px; }
+  th,td{ text-align:center; padding:8px 4px; border-bottom:1px solid var(--line); }
+  th{ color:var(--muted); font-weight:500; font-size:.72rem; }
+  th:first-child, td:first-child{ text-align:right; }
+  td.num{ font-variant-numeric:tabular-nums; }
+  tr.total td{ font-weight:700; color:var(--amber); border-top:1px solid var(--line); border-bottom:none; padding-top:10px; }
+  tr.total td:first-child{ color:var(--text); }
+
+  .kmcost{
+    display:flex; justify-content:space-between; align-items:center;
+    background:var(--panel-2); border:1px solid var(--line); border-radius:12px;
+    padding:12px 14px; margin-top:14px;
+  }
+  .kmcost .l{ font-size:.82rem; color:var(--muted); }
+  .kmcost .v{ font-size:1.1rem; font-weight:700; color:var(--teal); }
+
+  .reset{
+    display:block; width:100%; margin-top:14px; background:var(--panel-2); border:1px solid var(--line);
+    color:var(--muted); padding:11px; border-radius:10px; font-size:.82rem; cursor:pointer; font-family:inherit;
+  }
+  .reset:hover{ color:var(--text); border-color:var(--amber-dim); }
+
+  .note{ font-size:.74rem; color:var(--muted); line-height:1.7; margin-top:10px; padding-top:10px; border-top:1px dashed var(--line); }
+  footer{ text-align:center; color:var(--muted); font-size:.72rem; margin-top:22px; line-height:1.6; }
+  .del{background:none;border:none;color:var(--muted);cursor:pointer;font-size:.9rem;padding:2px 6px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand"><span class="dot"></span>Fiat Fiorino 1.3</div>
+    <div class="hero">
+      <div class="label" id="heroLabel">أجرة هذه الرحلة</div>
+      <div class="figure"><span id="heroDay" class="mono">0</span><sup>₺</sup></div>
+      <div class="sub-row">
+        <div><div class="v mono" id="heroMonth">0</div><div class="l">شهرياً ₺</div></div>
+        <div><div class="v mono" id="heroYear">0</div><div class="l">سنوياً ₺</div></div>
+        <div><div class="v mono" id="heroPerKm">0</div><div class="l">₺ / كم</div></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="card">
+    <h2><span class="n">①</span>الرحلة</h2>
+    <div class="field">
+      <div class="meta"><label for="km">الكيلومترات اليوم</label></div>
+      <div class="input-group">
+        <input type="number" id="km" value="" placeholder="0" min="0" inputmode="decimal" autofocus>
+        <span class="unit">كم</span>
+      </div>
+    </div>
+    <div class="field">
+      <div class="meta"><label>نوع الوقود</label></div>
+      <div class="toggle" id="fuelToggle">
+        <button type="button" data-fuel="gas" class="active">غاز LPG</button>
+        <button type="button" data-fuel="benzin">بنزين</button>
+        <button type="button" data-fuel="diesel">مازوت</button>
+      </div>
+    </div>
+    <div class="field">
+      <div class="meta">
+        <label for="fuelPrice">سعر اللتر الحالي</label>
+        <span class="hint" id="fuelHint"></span>
+      </div>
+      <div class="input-group">
+        <input type="number" id="fuelPrice" value="40" step="0.5" min="0" inputmode="decimal">
+        <span class="unit">₺/ل</span>
+      </div>
+    </div>
+    <button class="reset" id="saveTrip" style="margin-top:16px;background:var(--amber);color:#10261c;border-color:var(--amber);font-weight:700;font-size:.95rem">＋ حفظ رحلة اليوم</button>
+  </div>
+
+  <details class="card" id="settingsCard">
+    <summary>⚙️ الإعدادات (من فاتورتك الفعلية)</summary>
+
+    <h3>الاستهلاك</h3>
+    <div class="field">
+      <div class="meta"><label for="consumption">استهلاك السيارة</label><span class="hint">لتر لكل 100 كم</span></div>
+      <div class="input-group"><input type="number" id="consumption" value="10.67" step="0.01" min="0"><span class="unit">ل/100كم</span></div>
+    </div>
+
+    <h3>الصيانة الدورية</h3>
+    <div class="field">
+      <div class="meta"><label for="maintCost">تكلفة الصيانة</label></div>
+      <div class="input-group"><input type="number" id="maintCost" value="7000" min="0"><span class="unit">₺</span></div>
+    </div>
+    <div class="field">
+      <div class="meta"><label for="maintKm">كل كم كيلومتر</label></div>
+      <div class="input-group"><input type="number" id="maintKm" value="7000" min="1"><span class="unit">كم</span></div>
+    </div>
+
+    <h3>الإطارات</h3>
+    <div class="field">
+      <div class="meta"><label for="tireCost">سعر طقم الإطارات (4)</label></div>
+      <div class="input-group"><input type="number" id="tireCost" value="16000" min="0"><span class="unit">₺</span></div>
+    </div>
+    <div class="field">
+      <div class="meta"><label for="tireKm">عمر الإطارات</label><span class="hint">كم قبل التبديل</span></div>
+      <div class="input-group"><input type="number" id="tireKm" value="50000" min="1"><span class="unit">كم</span></div>
+    </div>
+
+    <h3>زيت المحرك</h3>
+    <div class="field">
+      <div class="meta"><label for="oilCost">تكلفة تبديل الزيت</label><span class="hint">قلّل مبلغ الصيانة إذا كان يشمله</span></div>
+      <div class="input-group"><input type="number" id="oilCost" value="1500" min="0"><span class="unit">₺</span></div>
+    </div>
+    <div class="field">
+      <div class="meta"><label for="oilKm">كل كم</label></div>
+      <div class="input-group"><input type="number" id="oilKm" value="10000" min="1"><span class="unit">كم</span></div>
+    </div>
+
+    <h3>الفرامل</h3>
+    <div class="field">
+      <div class="meta"><label for="brakeCost">تكلفة تبديل الفرامل</label></div>
+      <div class="input-group"><input type="number" id="brakeCost" value="3000" min="0"><span class="unit">₺</span></div>
+    </div>
+    <div class="field">
+      <div class="meta"><label for="brakeKm">كل كم</label></div>
+      <div class="input-group"><input type="number" id="brakeKm" value="40000" min="1"><span class="unit">كم</span></div>
+    </div>
+
+    <h3>البطارية</h3>
+    <div class="field">
+      <div class="meta"><label for="batCost">سعر البطارية</label></div>
+      <div class="input-group"><input type="number" id="batCost" value="3500" min="0"><span class="unit">₺</span></div>
+    </div>
+    <div class="field">
+      <div class="meta"><label for="batKm">عمرها بالكيلومتر</label></div>
+      <div class="input-group"><input type="number" id="batKm" value="60000" min="1"><span class="unit">كم</span></div>
+    </div>
+
+    <h3>الرسوم السنوية الثابتة</h3>
+    <div class="field">
+      <div class="meta"><label for="insurance">التأمين</label></div>
+      <div class="input-group"><input type="number" id="insurance" value="30000" min="0"><span class="unit">₺</span></div>
+    </div>
+    <div class="field">
+      <div class="meta"><label for="inspection">المعاينة (Muayene)</label></div>
+      <div class="input-group"><input type="number" id="inspection" value="4000" min="0"><span class="unit">₺</span></div>
+    </div>
+    <div class="field">
+      <div class="meta"><label for="tax">الضريبة (MTV)</label></div>
+      <div class="input-group"><input type="number" id="tax" value="10000" min="0"><span class="unit">₺</span></div>
+    </div>
+
+    <h3>توزيع المصاريف الثابتة</h3>
+    <div class="field">
+      <div class="meta"><label for="workDays">أيام العمل بالشهر</label><span class="hint">الثابت (تأمين، ضريبة، استهلاك...) يُوزَّع عليها</span></div>
+      <div class="input-group"><input type="number" id="workDays" value="26" min="1" max="31"><span class="unit">يوم</span></div>
+    </div>
+
+    <h3>قيمة السيارة (الاستهلاك)</h3>
+    <div class="field">
+      <div class="meta"><label for="carValue">قيمة السيارة الحالية</label></div>
+      <div class="input-group"><input type="number" id="carValue" value="700000" min="0"><span class="unit">₺</span></div>
+    </div>
+    <div class="field">
+      <div class="meta"><label for="deprPct">انخفاض القيمة سنوياً</label></div>
+      <div class="input-group"><input type="number" id="deprPct" value="8" step="0.5" min="0"><span class="unit">%</span></div>
+    </div>
+    <div class="field">
+      <div class="meta"><label for="deprOn">احتساب الانخفاض في الإجمالي</label></div>
+      <input type="checkbox" id="deprOn" checked style="width:20px;height:20px">
+    </div>
+
+    <h3>المخالفات</h3>
+    <div class="field">
+      <div class="meta"><label for="finesQ">متوسط المخالفات</label><span class="hint">كل 3 شهور</span></div>
+      <div class="input-group"><input type="number" id="finesQ" value="3250" min="0"><span class="unit">₺</span></div>
+    </div>
+  </details>
+
+  <details class="card" id="distCard">
+    <summary><span><span style="color:var(--amber);margin-inline-end:6px">②</span>توزيع المصروف السنوي</span></summary>
+    <div style="height:14px"></div>
+    <div class="bars" id="bars"></div>
+    <table>
+      <thead><tr><th>البند</th><th>يومياً</th><th>شهرياً</th><th>سنوياً</th></tr></thead>
+      <tbody id="rows"></tbody>
+      <tfoot>
+        <tr class="total">
+          <td>الإجمالي</td>
+          <td class="num mono" id="totDay">0</td>
+          <td class="num mono" id="totMonth">0</td>
+          <td class="num mono" id="totYear">0</td>
+        </tr>
+      </tfoot>
+    </table>
+    <div class="kmcost">
+      <span class="l">تكلفة الكيلومتر (وقود + صيانة + إطارات + زيت + فرامل + بطارية)</span>
+      <span class="v mono" id="perKmVariable">0₺</span>
+    </div>
+    <div class="note">
+      📌 رسم الفحص لمرة واحدة (9,500₺) غير متكرر ولم يُحتسب ضمن المصروف الدوري. المخالفات مبنية على متوسط آخر 3 شهور وقد يتغيّر.
+    </div>
+  </details>
+
+  <details class="card" id="odoCard">
+    <summary><span><span style="color:var(--amber);margin-inline-end:6px">③</span>العدّاد والتذكيرات</span></summary>
+    <div style="height:14px"></div>
+    <div class="field">
+      <div class="meta"><label for="odo">عدّاد الكيلومترات الحالي</label><span class="hint">يزيد تلقائياً عند حفظ رحلة</span></div>
+      <div class="input-group"><input type="number" id="odo" value="0" min="0" inputmode="numeric"><span class="unit">كم</span></div>
+    </div>
+    <div class="note" style="border:none;margin:10px 0 4px;padding:0">أدخل مرة وحدة كم قطعت منذ آخر تبديل لكل بند. يُحفظ تلقائياً ويزيد فقط مع كل رحلة جديدة:</div>
+    <div id="rem"></div>
+  </details>
+
+  <details class="card" id="logCard">
+    <summary><span><span style="color:var(--amber);margin-inline-end:6px">④</span>سجل الرحلات</span></summary>
+    <div style="height:14px"></div>
+    
+    <div class="kmcost" style="margin-top:0"><span class="l">مسافة هذا الشهر</span><span class="v mono"><span id="logKm">0</span> كم</span></div>
+    <div class="kmcost" style="margin-top:8px"><span class="l">الوقود المستهلك</span><span class="v mono"><span id="logL">0</span> ل · <span id="logFuel">0</span> ₺</span></div>
+    <div class="kmcost" style="margin-top:8px"><span class="l">إجمالي الأجور (فعلي)</span><span class="v mono"><span id="logCost">0</span> ₺</span></div>
+    <div class="kmcost" style="margin-top:8px"><span class="l">متوسط التكلفة / كم</span><span class="v mono"><span id="logAvg">0</span> ₺</span></div>
+    <table><tbody id="logList"></tbody></table>
+  </details>
+
+  <button class="reset" id="resetBtn">↺ إعادة الإعدادات الافتراضية</button>
+  <footer>الأرقام مبنية على بياناتك الفعلية · تُحفظ الإعدادات على جهازك فقط</footer>
+</div>
+
+<script>
+  const persistIds = ['consumption','maintCost','maintKm','tireCost','tireKm','oilCost','oilKm','brakeCost','brakeKm','batCost','batKm','carValue','deprPct','insurance','inspection','tax','finesQ','workDays','fuelType'];
+  const allInputIds = ['km','fuelPrice','consumption','maintCost','maintKm','tireCost','tireKm','oilCost','oilKm','brakeCost','brakeKm','batCost','batKm','carValue','deprPct','insurance','inspection','tax','finesQ','workDays'];
+  const defaults = {
+    consumption:10.67, maintCost:7000, maintKm:7000, tireCost:16000, tireKm:50000, oilCost:1500, oilKm:10000, brakeCost:3000, brakeKm:40000, batCost:3500, batKm:60000, carValue:700000, deprPct:8, workDays:26,
+    insurance:30000, inspection:4000, tax:10000, finesQ:3250,
+    fuelType:'gas', fuelPriceGas:40, fuelPriceBenzin:77.30, fuelPriceDiesel:97.90
+  };
+  const colors = {fuel:'var(--amber)', maint:'var(--violet)', tires:'var(--blue)', oil:'#d98cc3', brakes:'#e08a4f', bat:'#9bbf4a', depr:'#7d8aa6', fixed:'var(--teal)', fines:'var(--red)'};
+  const fmt = n => Math.round(n).toLocaleString('en-US');
+
+  function load(){
+    persistIds.forEach(id=>{
+      try{
+        const saved = localStorage.getItem('cec_'+id);
+        if(saved !== null && id!=='fuelType') document.getElementById(id).value = saved;
+      }catch(e){}
+    });
+    let fuelType = 'gas';
+    try{ fuelType = localStorage.getItem('cec_fuelType') || 'gas'; }catch(e){}
+    setFuelType(fuelType, false);
+  }
+  function save(){
+    persistIds.forEach(id=>{
+      if(id==='fuelType') return;
+      try{ localStorage.setItem('cec_'+id, document.getElementById(id).value); }catch(e){}
+    });
+  }
+
+  function setFuelType(type, updatePrice){
+    document.querySelectorAll('#fuelToggle button').forEach(b=>{
+      b.classList.toggle('active', b.dataset.fuel === type);
+    });
+    try{ localStorage.setItem('cec_fuelType', type); }catch(e){}
+    const hint = document.getElementById('fuelHint');
+    const priceInput = document.getElementById('fuelPrice');
+    const priceMap = {gas:defaults.fuelPriceGas, benzin:defaults.fuelPriceBenzin, diesel:defaults.fuelPriceDiesel};
+    const nameMap = { gas:'غاز', benzin:'بنزين', diesel:'مازوت' };
+    if(updatePrice){
+      priceInput.value = priceMap[type];
+    }
+    hint.textContent = nameMap[type] + ' ' + priceMap[type] + '₺';
+  }
+
+  document.querySelectorAll('#fuelToggle button').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      setFuelType(btn.dataset.fuel, true);
+      calc();
+    });
+  });
+
+  function calc(){
+    const km = parseFloat(document.getElementById('km').value) || 0;
+    const fuelPrice = parseFloat(document.getElementById('fuelPrice').value) || 0;
+    const consumption = parseFloat(document.getElementById('consumption').value) || 0;
+    const maintCost = parseFloat(document.getElementById('maintCost').value) || 0;
+    const maintKm = parseFloat(document.getElementById('maintKm').value) || 1;
+    const tireCost = parseFloat(document.getElementById('tireCost').value) || 0;
+    const tireKm = parseFloat(document.getElementById('tireKm').value) || 1;
+    const insurance = parseFloat(document.getElementById('insurance').value) || 0;
+    const inspection = parseFloat(document.getElementById('inspection').value) || 0;
+    const tax = parseFloat(document.getElementById('tax').value) || 0;
+    const finesQ = parseFloat(document.getElementById('finesQ').value) || 0;
+
+    const fuelCostPerKm = (consumption/100) * fuelPrice;
+    const maintCostPerKm = maintCost / maintKm;
+    const g = id => parseFloat(document.getElementById(id).value)||0;
+    const oilPerKm = g('oilCost')/(g('oilKm')||1), brakePerKm = g('brakeCost')/(g('brakeKm')||1), batPerKm = g('batCost')/(g('batKm')||1);
+    const deprOn = document.getElementById('deprOn').checked;
+    const deprYear = g('carValue')*g('deprPct')/100;
+    const tireCostPerKm = tireCost / tireKm;
+    const varPerKm = fuelCostPerKm+maintCostPerKm+tireCostPerKm+oilPerKm+brakePerKm+batPerKm;
+    const fixedYear = insurance + inspection + tax;
+    const finesYear = finesQ * 4;
+
+    const fuelDay = km * fuelCostPerKm;
+    const maintDay = km * maintCostPerKm;
+    const tireDay = km * tireCostPerKm;
+
+    const fuelRow  = {key:'fuel',  label:'الوقود',                         d:fuelDay,  m:fuelDay*30,  y:fuelDay*365};
+    const maintRow = {key:'maint', label:'الصيانة الدورية',                d:maintDay, m:maintDay*30, y:maintDay*365};
+    const tireRow  = {key:'tires', label:'استهلاك الإطارات', d:tireDay, m:tireDay*30, y:tireDay*365};
+    const vr = (key,label,p)=>({key,label,d:km*p,m:km*p*30,y:km*p*365});
+    const oilRow = vr('oil','زيت المحرك',oilPerKm), brakeRow = vr('brakes','الفرامل',brakePerKm), batRow = vr('bat','البطارية',batPerKm);
+    const deprRow = {key:'depr', label:'انخفاض قيمة السيارة', d:deprYear/365, m:deprYear/12, y:deprYear};
+    const fixedRow = {key:'fixed', label:'تأمين + معاينة + ضريبة',          d:fixedYear/365, m:fixedYear/12, y:fixedYear};
+    const finesRow = {key:'fines', label:'المخالفات (متوسط)',               d:finesYear/365, m:finesYear/12, y:finesYear};
+    const finalRows = [fuelRow, maintRow, tireRow, oilRow, brakeRow, batRow, fixedRow, ...(deprOn?[deprRow]:[]), finesRow];
+
+    const totDay = finalRows.reduce((s,r)=>s+r.d,0);
+    const totMonth = finalRows.reduce((s,r)=>s+r.m,0);
+    const totYear = finalRows.reduce((s,r)=>s+r.y,0);
+    const maxY = Math.max(...finalRows.map(r=>r.y), 1);
+
+    document.getElementById('bars').innerHTML = finalRows.map(r=>`
+      <div class="bar-row">
+        <div class="top"><span class="name">${r.label}</span><span class="val mono">${fmt(r.y)} ₺/سنة</span></div>
+        <div class="bar-track"><div class="bar-fill" style="width:${(r.y/maxY*100).toFixed(1)}%;background:${colors[r.key]}"></div></div>
+      </div>`).join('');
+
+    document.getElementById('rows').innerHTML = finalRows.map(r=>
+      `<tr><td>${r.label}</td><td class="num mono">${fmt(r.d)}</td><td class="num mono">${fmt(r.m)}</td><td class="num mono">${fmt(r.y)}</td></tr>`
+    ).join('');
+
+    document.getElementById('totDay').textContent = fmt(totDay);
+    lastDay = totDay; renderRem();
+    document.getElementById('totMonth').textContent = fmt(totMonth);
+    document.getElementById('totYear').textContent = fmt(totYear);
+    const workDays = g('workDays')||26;
+    const fixedDay = (fixedYear + finesYear + (deprOn?deprYear:0)) / (workDays*12);
+    const hasToday = log.some(e=>e.d===today());
+    const fare = km>0 ? km*varPerKm + (hasToday?0:fixedDay) : 0;
+    cur = {fare, fuelL: km*consumption/100, fuelCost: fuelDay, varCost: km*varPerKm, fixedAdd: (km>0&&!hasToday)?fixedDay:0};
+    document.getElementById('heroLabel').textContent = (km>0 && hasToday) ? 'أجرة هذه الرحلة (الحصة الثابتة احتُسبت اليوم)' : 'أجرة هذه الرحلة (تشمل حصة اليوم الثابتة)';
+    document.getElementById('heroDay').textContent = fmt(fare);
+    document.getElementById('heroMonth').textContent = fmt(totMonth);
+    document.getElementById('heroYear').textContent = fmt(totYear);
+    document.getElementById('heroPerKm').textContent = varPerKm.toFixed(2);
+    document.getElementById('perKmVariable').textContent = varPerKm.toFixed(2) + '₺';
+  }
+
+  allInputIds.forEach(id=>{
+    document.getElementById(id).addEventListener('input', ()=>{ save(); calc(); });
+  });
+  document.getElementById('resetBtn').addEventListener('click', ()=>{
+    persistIds.forEach(id=>{ if(id!=='fuelType') document.getElementById(id).value = defaults[id]; });
+    setFuelType('gas', true);
+    save(); calc();
+  });
+
+  const $ = id => document.getElementById(id);
+  let lastDay = 0, cur = {};
+  const remItems = [['maint','الصيانة الدورية','maintKm'],['oil','تبديل الزيت','oilKm'],['tires','الإطارات','tireKm'],['brakes','الفرامل','brakeKm'],['bat','البطارية','batKm']];
+  $('rem').innerHTML = remItems.map(([k,l])=>`<div class="field"><div class="meta"><label for="used_${k}">${l}</label><span class="hint" id="rem_${k}"></span></div><div class="input-group"><input type="number" id="used_${k}" value="0" min="0" inputmode="numeric"><span class="unit">كم</span></div><button type="button" class="del" data-k="${k}" style="font-size:.7rem;border:1px solid var(--line);border-radius:8px;white-space:nowrap">تم التبديل ↺</button></div>`).join('');
+  ['odo', ...remItems.map(i=>'used_'+i[0])].forEach(id=>{
+    try{ const v=localStorage.getItem('cec_'+id); if(v!==null) $(id).value=v; }catch(e){}
+    $(id).addEventListener('input',()=>{ try{localStorage.setItem('cec_'+id,$(id).value);}catch(e){} renderRem(); });
+  });
+  try{ const v=localStorage.getItem('cec_deprOn'); if(v!==null) $('deprOn').checked = v==='1'; }catch(e){}
+  $('deprOn').addEventListener('change',()=>{ try{localStorage.setItem('cec_deprOn',$('deprOn').checked?'1':'0');}catch(e){} calc(); });
+  document.querySelectorAll('#rem .del').forEach(b=>b.onclick=()=>{ const k=b.dataset.k; $('used_'+k).value=0; try{localStorage.setItem('cec_used_'+k,'0');}catch(e){} renderRem(); });
+  function renderRem(){
+    const odo = parseFloat($('odo').value)||0;
+    remItems.forEach(([k,l,iid])=>{
+      const iv = parseFloat($(iid).value)||1, used = parseFloat($('used_'+k).value)||0;
+      const left = iv-used, pct = used/iv, el = $('rem_'+k);
+      el.textContent = left<0 ? 'تجاوزت الموعد بـ '+fmt(-left)+' كم' : 'متبقي '+fmt(left)+' كم';
+      el.style.color = left<0 ? 'var(--red)' : pct>.85 ? 'var(--amber)' : 'var(--teal)';
+    });
+  }
+  let log = [];
+  try{ log = JSON.parse(localStorage.getItem('cec_log')||'[]'); }catch(e){ log=[]; }
+  function saveLog(){ try{localStorage.setItem('cec_log',JSON.stringify(log));}catch(e){} }
+  function today(){ const t=new Date(); return t.getFullYear()+'-'+String(t.getMonth()+1).padStart(2,'0')+'-'+String(t.getDate()).padStart(2,'0'); }
+  function renderLog(){
+    const mon = log.filter(e=>e.d.startsWith(today().slice(0,7)));
+    $('logKm').textContent = fmt(mon.reduce((s,e)=>s+e.km,0));
+    const sum = k => mon.reduce((s,e)=>s+(e[k]||0),0);
+    $('logCost').textContent = fmt(sum('cost'));
+    $('logL').textContent = sum('l').toFixed(1);
+    $('logFuel').textContent = fmt(sum('f'));
+    $('logAvg').textContent = sum('km') ? (sum('cost')/sum('km')).toFixed(2) : '0';
+    $('logList').innerHTML = log.slice(-10).reverse().map(e=>`<tr><td class="mono">${e.d}</td><td class="num mono">${fmt(e.km)} كم</td><td class="num mono">${fmt(e.cost)} ₺</td><td><button class="del" data-i="${log.indexOf(e)}">✕</button></td></tr>`).join('');
+    document.querySelectorAll('#logList .del').forEach(b=>b.onclick=()=>{ log.splice(+b.dataset.i,1); saveLog(); renderLog(); });
+  }
+  $('saveTrip').addEventListener('click',()=>{
+    const km = parseFloat($('km').value)||0; if(km<=0) return;
+    calc(); const c = cur;
+    log.push({d:today(),km,l:c.fuelL,f:Math.round(c.fuelCost),v:Math.round(c.varCost),x:Math.round(c.fixedAdd),cost:Math.round(c.fare)}); saveLog();
+    $('odo').value = (parseFloat($('odo').value)||0)+km;
+    remItems.forEach(([k])=>{ $('used_'+k).value = (parseFloat($('used_'+k).value)||0)+km; try{localStorage.setItem('cec_used_'+k,$('used_'+k).value);}catch(e){} });
+    try{localStorage.setItem('cec_odo',$('odo').value);}catch(e){}
+    $('km').value=''; save(); calc(); renderLog();
+  });
+
+  load();
+  calc();
+  renderLog();
+</script>
+</body>
+</html>
