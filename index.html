@@ -493,8 +493,14 @@
     $('logL').textContent = sum('l').toFixed(1);
     $('logFuel').textContent = fmt(sum('f'));
     $('logAvg').textContent = sum('km') ? (sum('cost')/sum('km')).toFixed(2) : '0';
-    $('logList').innerHTML = log.slice(-10).reverse().map(e=>`<tr><td class="mono">${e.d}</td><td class="num mono">${fmt(e.km)} كم</td><td class="num mono">${fmt(e.cost)} ₺</td><td><button class="del" data-i="${log.indexOf(e)}">✕</button></td></tr>`).join('');
-    document.querySelectorAll('#logList .del').forEach(b=>b.onclick=()=>{ log.splice(+b.dataset.i,1); saveLog(); renderLog(); });
+    $('logList').innerHTML = log.slice(-10).reverse().map(e=>`<tr><td class="mono">${e.d}</td><td class="num mono">${fmt(e.km)} كم</td><td class="num mono">${fmt(e.cost)} ₺</td><td><button class="del" data-i="${log.indexOf(e)}" style="font-size:.7rem;border:1px solid var(--line);border-radius:8px;white-space:nowrap">↺ Reset</button></td></tr>`).join('');
+    document.querySelectorAll('#logList .del').forEach(b=>b.onclick=()=>{
+      const i=+b.dataset.i, e=log[i]; if(!e) return;
+      log.splice(i,1); saveLog();
+      const sub=id=>{ $(id).value=Math.max(0,(parseFloat($(id).value)||0)-e.km); try{localStorage.setItem('cec_'+id,$(id).value);}catch(x){} };
+      sub('odo'); remItems.forEach(([k])=>sub('used_'+k));
+      renderRem(); calc(); renderLog();
+    });
   }
   $('saveTrip').addEventListener('click',()=>{
     const km = parseFloat($('km').value)||0; if(km<=0) return;
