@@ -455,7 +455,16 @@
   allInputIds.forEach(id=>{
     document.getElementById(id).addEventListener('input', ()=>{ save(); calc(); });
   });
-  document.getElementById('resetBtn').addEventListener('click', ()=>{
+  let resetArmed=false, resetTimer;
+  const resetLabel='↺ إعادة الإعدادات الافتراضية';
+  document.getElementById('resetBtn').addEventListener('click', function(){
+    const btn=this;
+    const disarm=()=>{ resetArmed=false; clearTimeout(resetTimer); btn.textContent=resetLabel; btn.style.color=''; btn.style.borderColor=''; };
+    if(!resetArmed){
+      resetArmed=true; btn.textContent='⚠️ متأكد؟ اضغط مرة ثانية للتأكيد'; btn.style.color='var(--red)'; btn.style.borderColor='var(--red)';
+      resetTimer=setTimeout(disarm,4000); return;
+    }
+    disarm();
     persistIds.forEach(id=>{ if(id!=='fuelType') document.getElementById(id).value = defaults[id]; });
     setFuelType('gas', true);
     save(); calc();
